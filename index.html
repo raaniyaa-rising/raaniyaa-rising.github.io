@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Help Raaniyaa dance on the global stage - A young champion from Belhar, Cape Town needs support to represent South Africa at GLX International in Thailand">
+  <meta name="theme-color" content="#702878">
+  <title>Raaniyaa Rising | Help a Champion Dance on the Global Stage</title>
+  <meta property="og:title" content="Raaniyaa Rising - Help a Champion Dance on the Global Stage">
+  <meta property="og:description" content="A young champion from Belhar has earned her place at an international competition in Thailand. Now she needs our help to get there.">
+  <meta property="og:image" content="https://scarf-act-62805174.figma.site/assets/raaniyaa-global-champion-BUHfTV41.jpeg">
+  <meta property="og:url" content="https://scarf-act-62805174.figma.site/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Raaniyaa Rising - Help a Champion Dance on the Global Stage">
+  <meta name="twitter:description" content="A young champion from Belhar needs support to represent South Africa at GLX International in Thailand">
+  <meta name="twitter:image" content="https://scarf-act-62805174.figma.site/assets/raaniyaa-global-champion-BUHfTV41.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#702878', light: '#9b4dca', dark: '#4a1a55' },
+            accent: { DEFAULT: '#65c6e0', light: '#8de0eb', dark: '#3db8d1' },
+            gold: { DEFAULT: '#f5a623', light: '#f7c06e', dark: '#d48a1e' },
+            dark: { DEFAULT: '#0f0f1a', lighter: '#1a1a2e' },
+            cream: '#faf9f6'
+          },
+          fontFamily: {
+            display: ['Space Grotesk', 'sans-serif'],
+            body: ['DM Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(101, 198, 224, 0.3); } 50% { box-shadow: 0 0 40px rgba(101, 198, 224, 0.6); } }
+    @keyframes progress-fill { from { width: 0%; } to { width: var(--progress-width); } }
+    @keyframes fade-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-fade-up { animation: fade-up 0.6s ease-out forwards; }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+    .animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+    .progress-bar { animation: progress-fill 1.5s ease-out forwards; }
+    .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+    .text-gradient { background: linear-gradient(135deg, #65c6e0 0%, #f5a623 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .btn-primary { background: linear-gradient(135deg, #702878 0%, #9b4dca 100%); transition: all 0.3s ease; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(112, 40, 120, 0.4); }
+    .btn-secondary { background: linear-gradient(135deg, #65c6e0 0%, #3db8d1 100%); transition: all 0.3s ease; }
+    .btn-secondary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(101, 198, 224, 0.4); }
+    .platform-card { transition: all 0.3s ease; }
+    .platform-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+    .image-reveal { overflow: hidden; }
+    .image-reveal img { transition: transform 0.8s ease; }
+    .image-reveal:hover img { transform: scale(1.05); }
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    .shimmer { background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent); background-size: 200% 100%; animation: shimmer 1.5s infinite; }
+    @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body class="font-body bg-dark text-cream antialiased">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass" style="background: rgba(15,15,26,0.9);">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3" aria-label="Raaniyaa Rising Home">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center animate-pulse-glow">
+          <svg class="w-6 h-6 text-cream" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <span class="font-display font-bold text-xl">Raaniyaa Rising</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#story" class="text-sm font-medium hover:text-accent transition-colors">Her Story</a>
+        <a href="#achievements" class="text-sm font-medium hover:text-accent transition-colors">Achievements</a>
+        <a href="#gallery" class="text-sm font-medium hover:text-accent transition-colors">Gallery</a>
+        <a href="#support" class="text-sm font-medium hover:text-accent transition-colors">Support</a>
+      </div>
+      <a href="#support" class="btn-primary px-6 py-2.5 rounded-full text-sm font-semibold hidden sm-inline-flex">Donate Now</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <div class="absolute inset-0" aria-hidden="true">
+      <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark/90 to-dark/60"></div>
+      <img src="https://scarf-act-62805174.figma.site/assets/raaniyaa-global-champion-BUHfTV41.jpeg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-15">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" style="animation-delay: -1.5s;"></div>
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto px-6 py-20 text-center">
+      <div class="animate-fade-up" style="animation-delay: 0.1s;">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium" style="background: rgba(101, 198, 224, 0.15); color: #65c6e0; border: 1px solid rgba(101, 198, 224, 0.3);">
+          <span class="w-2 h-2 rounded-full bg-accent animate-pulse" aria-hidden="true"></span>
+          URGENT: 5 Months Until Competition
+        </span>
+      </div>
+      
+      <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mt-6 animate-fade-up" style="animation-delay: 0.2s;">
+        Help Raaniyaa Dance on the
+        <br>
+        <span class="text-gradient">Global Stage</span>
+      </h1>
+      
+      <p class="text-lg md:text-xl text-cream/70 max-w-3xl mx-auto mt-6 animate-fade-up" style="animation-delay: 0.3s;">
+        A junior champion from Belhar, Cape Town has earned her place at the GLX International Competition in Thailand. 
+        Now she needs our help to get there.
+      </p>
+      
+      <!-- Stats Bar -->
+      <div class="grid grid-cols-3 gap-4 md:gap-8 max-w-4xl mx-auto mt-12 animate-fade-up" style="animation-delay: 0.4s;">
+        <div class="glass rounded-2xl p-6 md:p-8 border-accent/20">
+          <div class="font-display text-4xl md:text-5xl font-bold text-accent">R40,000</div>
+          <div class="text-sm text-cream/60 mt-1">Fundraising Goal</div>
+        </div>
+        <div class="glass rounded-2xl p-6 md:p-8 border-accent/20 relative">
+          <div class="font-display text-4xl md:text-5xl font-bold text-gold" id="raised-amount">R0</div>
+          <div class="text-sm text-cream/60 mt-1">Raised So Far</div>
+          <div class="mt-3 h-2 bg-dark/50 rounded-full overflow-hidden">
+            <div class="progress-bar h-full bg-gradient-to-r from-accent to-gold rounded-full" style="--progress-width: 0%; width: 0%;" id="progress-bar"></div>
+          </div>
+          <div class="text-xs text-cream/50 mt-1" id="progress-text">0% funded</div>
+        </div>
+        <div class="glass rounded-2xl p-6 md:p-8 border-accent/20">
+          <div class="font-display text-4xl md:text-5xl font-bold text-cream">0</div>
+          <div class="text-sm text-cream/60 mt-1">Supporters</div>
+        </div>
+      </div>
+      
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12 animate-fade-up" style="animation-delay: 0.5s;">
+        <a href="#support" class="btn-primary w-full sm:w-auto px-10 py-4 rounded-full text-lg font-semibold shadow-lg">
+          Donate Now
+        </a>
+        <button onclick="shareCampaign()" class="btn-secondary w-full sm:w-auto px-10 py-4 rounded-full text-lg font-semibold shadow-lg flex items-center justify-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Share Campaign
+        </button>
+      </div>
+      
+      <!-- Location & Deadline -->
+      <div class="flex flex-wrap items-center justify-center gap-6 mt-10 text-sm text-cream/60 animate-fade-up" style="animation-delay: 0.6s;">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span>Belhar, Cape Town → Thailand</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>Competition: April 2027</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          <span>Self-managed campaign</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-fade-up" style="animation-delay: 0.8s;">
+      <a href="#story" class="text-cream/50 hover:text-accent transition-colors flex flex-col items-center gap-2">
+        <span class="text-xs uppercase tracking-widest">Scroll to read her story</span>
+        <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Story Section -->
+  <section id="story" class="py-24 md:py-32 px-6 relative">
+    <div class="absolute inset-0" aria-hidden="true">
+      <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/10 to-transparent"></div>
+    </div>
+    <div class="max-w-7xl mx-auto relative">
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div class="animate-fade-up">
+          <span class="text-accent font-medium text-sm uppercase tracking-widest">01 / Her Story</span>
+          <h2 class="font-display text-4xl md:text-5xl font-bold mt-4 leading-tight">
+            From a Love of Movement to a World of <span class="text-gradient">Possibility</span>
+          </h2>
+          <p class="text-cream/60 mt-6 text-lg leading-relaxed italic border-l-4 border-accent pl-6">
+            "Hard work and dedication can take you to the global stage, regardless of where your journey began."
+          </p>
+        </div>
+        <div class="space-y-6 animate-fade-up" style="animation-delay: 0.1s;">
+          <div class="glass rounded-2xl p-6 md:p-8 border-accent/10">
+            <p class="text-cream/80 leading-relaxed text-lg">
+              What started as a love for movement in primary school has blossomed into an inspiring journey of passion, dedication and exceptional achievement.
+            </p>
+            <p class="text-cream/70 leading-relaxed mt-4">
+              Raaniyaa has loved dancing from a very young age. Whether volunteering for school concerts, practising for hours or studying dance videos, she dedicates almost all of her free time outside schoolwork to her passion.
+            </p>
+            <p class="text-cream/70 leading-relaxed mt-4">
+              To stay active and grow, she began attending after-school MOD dance classes and was later introduced to a non-profit dance club for competitive training.
+            </p>
+            <p class="text-cream/70 leading-relaxed mt-4 font-medium">
+              Her commitment, sacrifice and hours of hard work have yielded incredible results. Since last year, Raaniyaa has placed on the podium in <span class="text-accent font-bold">90%</span> of her competitions.
+            </p>
+          </div>
+          
+          <!-- Campaign Organizer Card -->
+          <div class="glass rounded-2xl p-6 border-primary/20 flex items-center gap-6">
+            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
+              <svg class="w-8 h-8 text-cream" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            </div>
+            <div>
+              <p class="text-xs text-cream/50 uppercase tracking-wider">Campaign Organiser</p>
+              <p class="font-display font-bold text-xl text-cream">Raaniyaa Solomons</p>
+              <p class="text-sm text-cream/60 flex items-center gap-2">
+                <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Belhar, Cape Town, South Africa
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="py-24 md:py-32 px-6 bg-dark/lighter relative">
+    <div class="absolute inset-0" aria-hidden="true">
+      <div class="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-accent/5 to-transparent"></div>
+    </div>
+    <div class="max-w-7xl mx-auto relative">
+      <div class="text-center mb-16 animate-fade-up">
+        <span class="text-accent font-medium text-sm uppercase tracking-widest">02 / The Wins</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold mt-4">
+          She Has Already <span class="text-gradient">Earned Her Place</span>
+        </h2>
+        <p class="text-cream/60 mt-4 max-w-2xl mx-auto">Talent opened the door. Discipline and determination carried her through it.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Achievement 1 -->
+        <article class="platform-card glass rounded-2xl p-8 border-accent/10 group animate-fade-up" style="animation-delay: 0.1s;">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center group-hover:bg-primary/40 transition-colors">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <p class="text-xs text-cream/50 uppercase tracking-wider">01</p>
+              <p class="font-display font-bold text-lg text-accent">WP</p>
+            </div>
+          </div>
+          <h3 class="font-display text-xl font-bold mb-3">Provincial Colours</h3>
+          <p class="text-cream/70 leading-relaxed">Awarded consecutive Western Province colours for outstanding performance in the DSCL Street Dance Association fixtures.</p>
+        </article>
+        
+        <!-- Achievement 2 -->
+        <article class="platform-card glass rounded-2xl p-8 border-accent/10 group animate-fade-up" style="animation-delay: 0.2s;">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center group-hover:bg-accent/40 transition-colors">
+              <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L3 12l5.714-2.143L13 3z"/></svg>
+            </div>
+            <div>
+              <p class="text-xs text-cream/50 uppercase tracking-wider">02</p>
+              <p class="font-display font-bold text-lg text-gold">SA</p>
+            </div>
+          </div>
+          <h3 class="font-display text-xl font-bold mb-3">National Qualifier</h3>
+          <p class="text-cream/70 leading-relaxed">Qualified for Nationals and secured a prestigious place on the All Stars South Africa team for two consecutive years.</p>
+        </article>
+        
+        <!-- Achievement 3 -->
+        <article class="platform-card glass rounded-2xl p-8 border-gold/20 group animate-fade-up animate-pulse-glow" style="animation-delay: 0.3s;">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-gold/20 flex items-center justify-center group-hover:bg-gold/40 transition-colors">
+              <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div>
+              <p class="text-xs text-cream/50 uppercase tracking-wider">03</p>
+              <p class="font-display font-bold text-lg text-gold">1ST</p>
+            </div>
+          </div>
+          <h3 class="font-display text-xl font-bold mb-3">Global Champion</h3>
+          <p class="text-cream/70 leading-relaxed">Placed first in the Junior Category, qualifying to represent South Africa at the international GLX competition in Thailand.</p>
+        </article>
+      </div>
+      
+      <!-- Additional Achievement -->
+      <div class="mt-10 animate-fade-up" style="animation-delay: 0.4s;">
+        <div class="glass rounded-2xl p-6 md:p-8 border-accent/10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center">
+              <svg class="w-8 h-8 text-cream" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L3 12l5.714-2.143L13 3z"/></svg>
+            </div>
+            <div>
+              <p class="font-display text-xl font-bold">National Finals Champion</p>
+              <p class="text-cream/60">First place at the National Finals competition</p>
+            </div>
+          </div>
+          <a href="#gallery" class="btn-primary px-6 py-3 rounded-full font-semibold self-center">View Gallery →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why It Matters Section -->
+  <section id="why-matters" class="py-24 md:py-32 px-6 relative">
+    <div class="absolute inset-0" aria-hidden="true">
+      <img src="https://scarf-act-62805174.figma.site/assets/raaniyaa-team-kit-NS693gue.jpeg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-5">
+      <div class="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/70 to-dark/90"></div>
+    </div>
+    <div class="max-w-7xl mx-auto relative">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="animate-fade-up">
+          <span class="text-accent font-medium text-sm uppercase tracking-widest">03 / Why It Matters</span>
+          <h2 class="font-display text-4xl md:text-5xl font-bold mt-4 leading-tight">
+            More Than a Competition. A Chance to <span class="text-gradient">Grow</span>.
+          </h2>
+          <p class="text-cream/70 mt-6 leading-relaxed text-lg">
+            This international exposure will allow Raaniyaa to compete with talented dancers from around the world, learn new techniques, build confidence and grow as an individual.
+          </p>
+          <p class="text-cream/70 mt-4 leading-relaxed">
+            By representing South Africa, she hopes to inspire other young dancers in her community and show what is possible through hard work and dedication.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 animate-fade-up" style="animation-delay: 0.1s;">
+          <div class="glass rounded-2xl p-6 border-accent/10 text-center group">
+            <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-primary/20 flex items-center justify-center group-hover:bg-primary/40 transition-colors">
+              <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-lg">Travel Arrangements</h3>
+            <p class="text-cream/60 text-sm mt-1">Flights & transport to Thailand</p>
+          </div>
+          <div class="glass rounded-2xl p-6 border-accent/10 text-center group">
+            <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-accent/20 flex items-center justify-center group-hover:bg-accent/40 transition-colors">
+              <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-lg">Competition Fees</h3>
+            <p class="text-cream/60 text-sm mt-1">GLX registration & entry costs</p>
+          </div>
+          <div class="glass rounded-2xl p-6 border-accent/10 text-center group">
+            <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-primary/20 flex items-center justify-center group-hover:bg-primary/40 transition-colors">
+              <svg class="w-7 h-7 text-cream" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-lg">Accommodation</h3>
+            <p class="text-cream/60 text-sm mt-1">Stay during competition period</p>
+          </div>
+          <div class="glass rounded-2xl p-6 border-accent/10 text-center group">
+            <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-gold/20 flex items-center justify-center group-hover:bg-gold/40 transition-colors">
+              <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17a4 4 0 01-4-4v-4"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-lg">Official SA Dance Clothing</h3>
+            <p class="text-cream/60 text-sm mt-1">Team kit for representing SA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-24 md:py-32 px-6 bg-dark/lighter">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 animate-fade-up">
+        <span class="text-accent font-medium text-sm uppercase tracking-widest">04 / The Journey</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold mt-4">
+          Made for the <span class="text-gradient">Moment</span>
+        </h2>
+        <p class="text-cream/60 mt-4 max-w-2xl mx-auto">Every trophy tells a story of early mornings, long practices and showing up again.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+        <!-- Gallery images will be inserted by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Support Platforms Section -->
+  <section id="support" class="py-24 md:py-32 px-6 relative">
+    <div class="absolute inset-0" aria-hidden="true">
+      <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/10 to-transparent"></div>
+    </div>
+    <div class="max-w-7xl mx-auto relative">
+      <div class="text-center mb-16 animate-fade-up">
+        <span class="text-accent font-medium text-sm uppercase tracking-widest">Support Raaniyaa</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold mt-4">
+          Choose Your Platform to <span class="text-gradient">Donate</span>
+        </h2>
+        <p class="text-cream/60 mt-4 max-w-2xl mx-auto">Secure donations are processed on official campaign pages. Every platform links back to this central hub.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="platforms-grid">
+        <!-- Platform cards will be inserted by JS -->
+      </div>
+      
+      <!-- Direct BackaBuddy Link (Primary) -->
+      <div class="mt-16 animate-fade-up" style="animation-delay: 0.2s;">
+        <a href="https://www.backabuddy.co.za/campaign/dance-on-the-global-stage" target="_blank" rel="noopener" class="group flex items-center justify-center gap-4 px-10 py-6 rounded-2xl bg-gradient-to-r from-primary via-primary to-accent border-2 border-accent/30 hover:border-accent/60 transition-all">
+          <svg class="w-8 h-8 text-cream group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+          <div class="text-left">
+            <p class="text-sm text-cream/70">Primary Campaign on</p>
+            <p class="font-display font-bold text-xl text-cream">BackaBuddy</p>
+          </div>
+          <svg class="w-6 h-6 text-cream/50 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Share Section -->
+  <section class="py-24 px-6 bg-dark/lighter relative">
+    <div class="absolute inset-0" aria-hidden="true">
+      <div class="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5"></div>
+    </div>
+    <div class="max-w-4xl mx-auto relative text-center">
+      <div class="glass rounded-3xl p-8 md:p-12 border-accent/20 animate-fade-up">
+        <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">Be Part of Her Story</h2>
+        <p class="text-cream/70 text-lg mb-8 max-w-2xl mx-auto">Let's take Belhar to Thailand. No contribution is too small. If you cannot donate, sharing this campaign can help it reach someone who can.</p>
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <button onclick="shareCampaign()" class="btn-primary px-8 py-3 rounded-full font-semibold flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            Share Campaign
+          </button>
+          <button onclick="copyLink()" class="btn-secondary px-8 py-3 rounded-full font-semibold flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            Copy Link
+          </button>
+        </div>
+        <p class="text-cream/50 text-sm mt-6">#RaaniyaaRising #DanceOnGlobalStage #BelharToThailand</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 px-6 border-t border-white/10">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div class="md:col-span-2">
+          <a href="#" class="flex items-center gap-3 mb-6" aria-label="Raaniyaa Rising Home">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+              <svg class="w-7 h-7 text-cream" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <span class="font-display font-bold text-2xl">Raaniyaa Rising</span>
+          </a>
+          <p class="text-cream/60 max-w-md">A community campaign for a young South African champion. Helping Raaniyaa represent South Africa at the GLX International Competition in Thailand.</p>
+        </div>
+        <div>
+          <h4 class="font-display font-bold mb-4">Quick Links</h4>
+          <nav class="space-y-2">
+            <a href="#story" class="text-cream/60 hover:text-accent transition-colors block">Her Story</a>
+            <a href="#achievements" class="text-cream/60 hover:text-accent transition-colors block">Achievements</a>
+            <a href="#gallery" class="text-cream/60 hover:text-accent transition-colors block">Gallery</a>
+            <a href="#support" class="text-cream/60 hover:text-accent transition-colors block">Support Platforms</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="font-display font-bold mb-4">Contact</h4>
+          <address class="text-cream/60 not-italic space-y-2">
+            <p class="flex items-center gap-2"><svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg> raaniyaas@gmail.com</p>
+            <p class="flex items-center gap-2"><svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg> Belhar, Cape Town, SA</p>
+          </address>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-cream/40 text-sm">© 2026 Raaniyaa Rising. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="https://www.backabuddy.co.za/campaign/dance-on-the-global-stage" target="_blank" rel="noopener" class="text-cream/40 hover:text-accent transition-colors text-sm">Official BackaBuddy Campaign</a>
+          <a href="https://scarf-act-62805174.figma.site/" target="_blank" rel="noopener" class="text-cream/40 hover:text-accent transition-colors text-sm">Original Figma Site</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Donate Button -->
+  <a href="#support" class="fixed bottom-8 right-8 btn-primary px-6 py-3 rounded-full font-semibold shadow-2xl z-40 hidden md:flex items-center gap-2 animate-fade-up" style="animation-delay: 1s;">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+    Donate Now
+  </a>
+
+  <script>
+    // Campaign Data
+    const campaignData = {
+      goal: 40000,
+      raised: 0,
+      supporters: 0,
+      currency: 'ZAR',
+      images: [
+        { src: 'https://scarf-act-62805174.figma.site/assets/raaniyaa-global-champion-BUHfTV41.jpeg', alt: 'Raaniyaa with her Global Dance Supreme trophy and first place award' },
+        { src: 'https://scarf-act-62805174.figma.site/assets/raaniyaa-national-winner-DTfMzu71.jpeg', alt: 'Raaniyaa celebrating her first place finish at the National Finals' },
+        { src: 'https://scarf-act-62805174.figma.site/assets/raaniyaa-provincial-colours-C96kJL0K.jpeg', alt: 'Raaniyaa in her Western Cape dance tracksuit holding a certificate' },
+        { src: 'https://scarf-act-62805174.figma.site/assets/raaniyaa-third-place-BmysbtNi.jpeg', alt: 'Raaniyaa holding her third place National Finals award' },
+        { src: 'https://scarf-act-62805174.figma.site/assets/raaniyaa-team-kit-NS693gue.jpeg', alt: 'Raaniyaa wearing her official Western Cape dance kit' },
+        { src: 'https://scarf-act-62805174.figma.site/assets/raaniyaa-first-place-B5QuQis7.jpeg', alt: 'Raaniyaa holding her first place Club League award' }
+      ],
+      platforms: [
+        { name: 'BackaBuddy', url: 'https://www.backabuddy.co.za/campaign/dance-on-the-global-stage', icon: '🇿🇦', primary: true, description: 'Primary SA platform' },
+        { name: 'GoFundMe', url: 'https://gofundme.com', icon: '🌍', primary: false, description: 'Global platform' },
+        { name: 'FreeFunder', url: 'https://freefunder.com', icon: '💙', primary: false, description: 'No platform fees' },
+        { name: 'JustGiving', url: 'https://justgiving.com', icon: '💜', primary: false, description: 'UK/Global trusted' },
+        { name: 'WhyDonate', url: 'https://whydonate.com', icon: '💚', primary: false, description: 'European platform' },
+        { name: 'Crowdfundr', url: 'https://crowdfundr.com', icon: '⭐', primary: false, description: 'Creative projects' },
+        { name: 'Jumpstarter Foundation', url: 'https://jumpstarterfoundation.org.za', icon: '🇿🇦', primary: false, description: 'SA non-profit' },
+        { name: 'FundDreamz', url: 'https://funddreamz.com', icon: '🌟', primary: false, description: 'Dream funding' },
+        { name: 'ThundaFund Africa', url: 'https://thundafund.africa', icon: '🌍', primary: false, description: 'African platform' },
+        { name: 'Different.org', url: 'https://different.org', icon: '🔄', primary: false, description: 'Impact giving' },
+        { name: 'Feenix', url: 'https://feenix.org', icon: '🎓', primary: false, description: 'Student funding' },
+        { name: 'Donorbox', url: 'https://donorbox.org', icon: '📦', primary: false, description: 'Nonprofit tools' },
+        { name: 'Honeyfund', url: 'https://honeyfund.com', icon: '🍯', primary: false, description: 'Gift registry style' },
+        { name: 'Indiegogo', url: 'https://indiegogo.com', icon: '🚀', primary: false, description: 'Global crowdfunding' }
+      ]
+    };
+
+    // Initialize progress bar
+    function updateProgress() {
+      const percent = campaignData.goal > 0 ? (campaignData.raised / campaignData.goal * 100) : 0;
+      const progressBar = document.getElementById('progress-bar');
+      const progressText = document.getElementById('progress-text');
+      const raisedAmount = document.getElementById('raised-amount');
+      
+      if (progressBar) {
+        progressBar.style.setProperty('--progress-width', `${percent}%`);
+        progressBar.style.width = `${percent}%`;
+      }
+      if (progressText) {
+        progressText.textContent = `${percent.toFixed(1)}% funded`;
+      }
+      if (raisedAmount) {
+        raisedAmount.textContent = `R${campaignData.raised.toLocaleString()}`;
+      }
+    }
+
+    // Render Gallery
+    function renderGallery() {
+      const grid = document.getElementById('gallery-grid');
+      if (!grid) return;
+      
+      grid.innerHTML = campaignData.images.map((img, index) => `
+        <article class="image-reveal glass rounded-2xl overflow-hidden group animate-fade-up" style="animation-delay: ${index * 0.1}s;">
+          <img src="${img.src}" alt="${img.alt}" class="w-full h-64 md:h-72 object-cover" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <p class="text-cream text-sm font-medium">${img.alt}</p>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    // Render Platforms
+    function renderPlatforms() {
+      const grid = document.getElementById('platforms-grid');
+      if (!grid) return;
+      
+      grid.innerHTML = campaignData.platforms.map((platform, index) => `
+        <a href="${platform.url}" target="_blank" rel="noopener" class="platform-card glass rounded-2xl p-6 border-${platform.primary ? 'gold/30' : 'accent/10'} group ${platform.primary ? 'ring-2 ring-gold/30' : ''} animate-fade-up" style="animation-delay: ${index * 0.05}s;">
+          <div class="flex items-start justify-between mb-4">
+            <span class="text-4xl">${platform.icon}</span>
+            ${platform.primary ? '<span class="text-xs font-bold text-gold px-2 py-1 rounded-full bg-gold/10">PRIMARY</span>' : ''}
+          </div>
+          <h3 class="font-display text-xl font-bold mb-2">${platform.name}</h3>
+          <p class="text-cream/60 text-sm mb-4">${platform.description}</p>
+          <div class="flex items-center justify-between">
+            <span class="text-accent text-sm font-medium">Donate →</span>
+            <svg class="w-5 h-5 text-cream/40 group-hover:text-accent group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+      `).join('');
+    }
+
+    // Share Campaign
+    function shareCampaign() {
+      const url = window.location.href;
+      const text = 'Help Raaniyaa dance on the global stage! A young champion from Belhar needs support to represent South Africa at GLX in Thailand. Every rand counts. #RaaniyaaRising #DanceOnGlobalStage';
+      
+      if (navigator.share) {
+        navigator.share({ title: 'Raaniyaa Rising', text, url }).catch(console.error);
+      } else {
+        copyToClipboard(url);
+        showToast('Campaign link copied to clipboard!');
+      }
+    }
+
+    // Copy Link
+    function copyLink() {
+      copyToClipboard(window.location.href);
+      showToast('Link copied to clipboard!');
+    }
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).catch(() => {
+        const input = document.createElement('input');
+        input.value = text;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+      });
+    }
+
+    function showToast(message) {
+      const toast = document.createElement('div');
+      toast.className = 'fixed bottom-24 right-8 glass rounded-xl px-6 py-3 border-accent/30 z-50 animate-fade-up';
+      toast.textContent = message;
+      document.body.appendChild(toast);
+      setTimeout(() => { toast.style.opacity = '0'; toast.style.transform = 'translateY(10px)'; setTimeout(() => toast.remove(), 300); }, 3000);
+    }
+
+    // Intersection Observer for animations
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-fade-up').forEach(el => {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      updateProgress();
+      renderGallery();
+      renderPlatforms();
+      
+      // Resume animations after load
+      setTimeout(() => {
+        document.querySelectorAll('.animate-fade-up').forEach(el => {
+          el.style.animationPlayState = 'running';
+        });
+      }, 100);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
